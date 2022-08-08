@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+   
+    font-family: 'Roboto', sans-serif;
+    background: #000300;
+ 
+    animation: 1s fade;
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes fade{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+::selection {
+    background: black;
+    color: white;
+}
+::placeholder {
+    color: white;
+    font-size: 15px;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+    }
+   
+.box {
+    display:flex;
+    flex-direction: column;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 11px 16px 7px #000000; 
+    box-shadow: 1px 11px 16px 7px #000000;
+  
+ 
+    width: 800px;
+  
+
+}
+header{
+    background: #DBD053;
+    padding: 15px;
+    font-size: 25px;
+    border-bottom: 5px groove black;
+
+}
+main{
+height: 500px;
+   
+    background: #8390FA;
+    padding: 25px;
+    overflow: scroll;
+}
+footer{
+    background: #37515F;
+    padding: 15px;
+    display: flex;
+    border-top: 5px groove black;
+   margin-top: auto;
+
+}
+#input_footer {
+    background: none;
+    transition: .2s border;
+    outline: none;
+    border: none;
+    color: white;
+
+}
+#input_footer:hover {
+  
+border-bottom: 2px solid white;
+
+
+}
+
+#button_footer {
+    background: #EF6461;
+    color: white;
+ 
+    outline: none;
+    padding: 15px;
+    font-weight: bold;
+    border: none;
+    margin-left: auto;
+    border-radius: 15px;
+    transition: .5s transform;
+}
+#button_footer:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+p {
+ margin-left: auto;
+ background: #9AE19D;
+ color: black;
+ 
+ padding: 15px;
+ border-top-left-radius: 15px;
+ border-bottom-right-radius: 15px;
+ animation: .5s fromright;
+}
+@keyframes fromright {
+    0%{
+        margin-right: -1000px;
+     }
+     100% {
+        margin-right: 0px;
+     }
+ }
+span {
+    margin-right: auto;
+    background: #EF6461;
+    color: black;
+    
+    padding: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    animation: .5s fromleft;
+}
+@keyframes fromleft {
+    0%{
+       margin-left: -1000px;
+    }
+    100% {
+       margin-left: 0px;
+    }
+}
+p, span {
+    margin-top: 15px;
+}
